@@ -1,0 +1,4 @@
+- On INSTALLED_APP use `polls.apps.AppConfig` instead of `polls`
+- Always redirect after post
+- 
+
