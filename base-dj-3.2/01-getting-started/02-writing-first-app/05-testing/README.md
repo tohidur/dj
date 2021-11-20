@@ -1,0 +1,2 @@
+- Add unit tests and flow tests as well
+- Better if you do test driven development
