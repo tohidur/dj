@@ -33,6 +33,6 @@
 
   - More on packaging - [Python packaging docs](https://packaging.python.org/tutorials/packaging-projects/)
 
-- **Using package**  
-  - 
+- **Using package** 
+  - `python -m pip install --user django-polls/dist/django-polls-0.1.tar.gz`
 
