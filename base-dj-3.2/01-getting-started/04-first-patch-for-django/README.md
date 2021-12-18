@@ -9,8 +9,7 @@
 - Install on virtual environment.  
   `python3 -m venv ~/.virtualenvs/djangodev`
 - [Creating a project with local copy of django](
-    https://docs.djangoproject.com/en/3.2/intro/contributing/  
-    #creating-projects-with-a-local-copy-of-django)
+    https://docs.djangoproject.com/en/3.2/intro/contributing/#creating-projects-with-a-local-copy-of-django)
 - Running Django's test suit for the first time.
   - Install dependencies cd-ing into the Django `tests/`.
     `python -m pip install -r requirements/py3.txt`
