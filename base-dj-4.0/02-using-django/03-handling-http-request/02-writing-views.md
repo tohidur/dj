@@ -41,3 +41,6 @@ async def current_datetime(request):
     html = '<html><body>It is now %s.</body></html>' % now
     return HttpResponse(html)
 ```
+
+## Generic Views
+See APIReference of class based views.
