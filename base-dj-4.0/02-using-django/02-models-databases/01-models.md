@@ -118,6 +118,16 @@
       
       beatles.members.clear()
       ```
+    
+    - To access membership information
+      ```python
+      ringos_membership = Membership.objects.get(group=beatles, person=ringo)
+      
+      OR
+      
+      ringos_membership = ringo.membership_set.get(group=beatles)
+      ringos_membership.date_joined
+      ``` 
 
   - **One-to-One Relationship
     - Use `models.OneToOneField`.
@@ -125,7 +135,7 @@
     - Deprecation warning
       `OneToOneField` used to used to automatically become the primary key
       on the model. This is no longer true, although you can manually pass
-      `primary_key` argument. Thus it's not possible to have multiple
+      `primary_key` argument. Thus it's now possible to have multiple
       `OneToOneField` on a single model.
       
 #### Models across files
@@ -260,7 +270,8 @@ class Ox(models.Model):
   
   - Solution
     ```
-    Adding related_name to the customers field as follows would resolve the error: models.ManyToManyField(Place, related_name='provider').
+    Adding related_name to the customers field as follows would resolve the error:
+    models.ManyToManyField(Place, related_name='provider').
     ```
     
 ##### Proxy models
